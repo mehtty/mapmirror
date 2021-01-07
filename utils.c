@@ -11,6 +11,8 @@
        __typeof__ (b) _b = (b); \
      _a < _b ? _a : _b; })
 
+#define arraylen(x)  (sizeof(x) / sizeof((x)[0]))
+
 int strisblank(char * s) {
     if(!s || !strlen(s)) {
         return 1;
