@@ -2,9 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#ifdef WINVER
+#include "io.c"
+#endif
 #include "utils.c"
 
-#define VERSION "0.2"
+#define VERSION "0.3"
 #define MAX_FIELDS 200
 
 const char * TEX_TAG = "[textures]";
